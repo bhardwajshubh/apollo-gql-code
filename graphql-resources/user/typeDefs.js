@@ -17,11 +17,12 @@ export const typeDefs = gql`
         age: Int!
     }
     
-    type Query {
-        Users(id: Int): [User]
+    extend type Query {
+        User(id: Int): User
+        Users: [User]
     }
 
-    type Mutation {
+    extend type Mutation {
         User(input: UserInput!): User
     }
 `

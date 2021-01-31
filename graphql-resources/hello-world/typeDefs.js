@@ -1,6 +1,6 @@
 import { gql } from 'apollo-server'
 export const typeDef = gql`
-    type Query {
+    extend type Query {
         HelloWorld: String!
     }
 
