@@ -8,6 +8,6 @@ WORKDIR /opt/hello-world-app/
 
 RUN pwd
 
-EXPOSE 8001
+EXPOSE 3000
 
 CMD [ "npm" , "run", "start-dev" ]
